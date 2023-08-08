@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 for i in range (ord('a'), ord('z') + 1):
     alp = chr(i)
-    print({}.format(alp))
+    print({0}.format(alp), end=' ')
