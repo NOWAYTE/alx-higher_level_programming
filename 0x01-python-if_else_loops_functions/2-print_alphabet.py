@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import string 
-alp = string.ascii_lowercase
-
-print(alp)
+for i in range (ord('a'), ord('z') + 1):
+    alp = chr(i)
+    print({}.format(alp))
