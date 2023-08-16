@@ -11,7 +11,7 @@
  *
  */
 
-void print_python_list_info(Pyobject *p)
+void print_python_list_info(PyObject *P)
 {
 	Py_ssize_t s, i, x;
 
