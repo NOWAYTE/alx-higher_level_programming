@@ -1,7 +1,15 @@
-#include<stdio.h>
 #include<Python.h>
+#include<stdio.h>
 #include<listobject.h>
 #include<object.h>
+/**
+ * print_python_list_info - A c function that print some basic
+ * information about python lists
+ * *p: pointer 
+ *
+ * Return: does not have a return type
+ *
+ */
 
 void print_python_list_info(Pyobject *p)
 {
