@@ -4,5 +4,4 @@ if __name__ == "__main__":
 
     i = dir(hidden_4)
     for n in i:
-        if n[:2] != "__":
             print(n)
