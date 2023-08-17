@@ -4,6 +4,6 @@ if __name__ == "__main__":
     argv = sys.argv
 
     for i in range(len(argv) - 1):
-        result += int(arg[i] + 1)
+        result += arg[i + 1]
 
         print('{}'.format(result))
