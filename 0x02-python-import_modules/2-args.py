@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-from sys import argv
+import sys
 
 if __name__ == "__main__":
-    n = len(argv)
+
+    n = len(sys.argv) - 1
 
     if n == 0:
         print("0 arguments")
@@ -14,4 +15,4 @@ if __name__ == "__main__":
         print('{} arguments:'.format(n))
 
     for i in range(n):
-        print('{}: {}'.format(i, argv[1]))
+        print('{}: {}'.format(i + 1, sys.argv[i + 1]))
