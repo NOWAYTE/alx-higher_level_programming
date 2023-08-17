@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import calculator*
+import calculator add, sub, mul, div
 a = 10
 b = 5
 
