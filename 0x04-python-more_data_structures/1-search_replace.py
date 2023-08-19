@@ -11,4 +11,3 @@ def search_replace(my_list, search, replace):
             n_list.append(i)
 
     return n_list
-
