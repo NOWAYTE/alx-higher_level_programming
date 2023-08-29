@@ -4,9 +4,8 @@ def safe_print_integer_err(value):
     try:
         if isinstance(value, int):
             print('{:d}'.format(value))
-            return True
-        else:
-            raise TypeError("Value not integer")
     except Exception as a:
-        sys.stderr.write('Exception: {}'.format(str(a)))
+        sys.stderr.write('Exception: {}\n'.format(str(a)))
         return False
+    else:
+        return True
