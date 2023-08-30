@@ -1,4 +1,9 @@
-lass Square:
+#!/usr/bin/python3
+"""A class that defines a square"""
+
+
+class Square:
+    """a class that defines a square"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -19,7 +24,7 @@ lass Square:
     def position(self):
         return self.__position
 
-	@position.setter
+    @position.setter
     def position(self, value):
         """"position"""
         if (type(value) is not tuple):
@@ -33,7 +38,7 @@ lass Square:
         else:
             self.__position = value
 
-	def area(self):
+    def area(self):
         return self.__size ** 2
 
     def my_print(self):
