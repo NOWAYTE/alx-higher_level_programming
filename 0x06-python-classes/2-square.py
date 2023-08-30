@@ -9,7 +9,7 @@ class Square:
         try:
             if isinstance(size, int):
                 pass
-            if size >= 0 :
+            if not size < 0 :
                 pass
         except TypeError:
             print("size must be an integer")
