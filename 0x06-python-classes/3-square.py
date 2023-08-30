@@ -10,8 +10,7 @@ class Square:
         if size < 0:
             raise ValueError("Size must be >= 0")
         self.__size = size
-    
+
     def area(self):
         """a public instance method that returns the current area"""
         return self.__size * self.__size
-
