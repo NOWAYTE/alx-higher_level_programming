@@ -3,7 +3,7 @@
 
 
 class Square:
-    """A class with a private size attribute size setter and public instance method"""
+    """class with private size attribut, setter, public instance method"""
     def __init__(self, size=0):
         self.__size = size
 
@@ -18,9 +18,10 @@ class Square:
         if value < 0:
             raise ValueError("size must be >=0")
         self.__size = value
+
     def area(self):
         return self.__size ** 2
-    
+
     def my_print(self):
         if self.__size == 0:
             print()
