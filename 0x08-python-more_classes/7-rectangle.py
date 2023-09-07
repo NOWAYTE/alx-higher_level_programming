@@ -56,7 +56,7 @@ class Rectangle:
         return rec
 
     def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__width})"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
