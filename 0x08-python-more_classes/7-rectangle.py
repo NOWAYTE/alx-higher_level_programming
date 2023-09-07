@@ -1,15 +1,8 @@
-#!/usr/bin/python3
-""" A class that defines a Rectangle """
-
-
 class Rectangle:
-    """ A Rectangle class """
     number_of_instances = 0
     print_symbol = "#"
 
-
     def __init__(self, width=0, height=0):
-        """ Defines a width and height attributes """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -23,7 +16,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -44,16 +37,15 @@ class Rectangle:
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
-        return ((self.__width + self.__height) * 2)
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        rec = ""
-        for i in range(self.__height):
-            rec += "#" * self.__width + "\n"
-
-        return rec
+        rectangle_str = ""
+        for _ in range(self.__height):
+            rectangle_str += str(self.print_symbol) * self.__width + "\n"
+        return rectangle_str[:-1]
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
