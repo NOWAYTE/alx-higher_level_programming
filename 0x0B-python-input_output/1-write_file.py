@@ -1,9 +1,9 @@
-#!/usr/bin/python3 
-"""A function that reads a text"""
+#!/usr/bin/python3
+"""Writes a string """
 
 
-def read_file(filename=""):
-    """reads a file and prints it to stdout"""
+def write_file(filename="", text=""):
+    """write to UTF file"""
 
-    with open(filename, encoding="utf-8") as a :
-        print(a.read(), end="")
+    with open(filename, w, encoding="utf-8") as a:
+        return f.write(text)
