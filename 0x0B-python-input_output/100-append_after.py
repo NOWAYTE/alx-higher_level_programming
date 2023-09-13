@@ -6,9 +6,9 @@ def append_after(filename="", search_string="", new_string=""):
     text = ""
 
     with open(filename) as a:
-        for t in a:
-            text += t
-            if search_string in t:
+        for l in a:
+            text += l
+            if search_string in l:
                 text += new_string
 
     with open(filename, "w") as x:
