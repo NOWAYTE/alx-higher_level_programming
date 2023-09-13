@@ -5,5 +5,5 @@
 def write_file(filename="", text=""):
     """write to UTF file"""
 
-    with open(filename, w, encoding="utf-8") as a:
-        return f.write(text)
+    with open(filename, "w", encoding="utf-8") as a:
+        return a.write(text)
