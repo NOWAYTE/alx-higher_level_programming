@@ -15,5 +15,5 @@ class Student:
             return self.__dict__
 
     def reload_from_json(self, json):
-        for attr, a in json.item():
+        for attr, a in json.items():
             setattr(self, attr, a)
