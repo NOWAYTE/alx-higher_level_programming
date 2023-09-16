@@ -7,7 +7,7 @@ add_integer = __import__('0-add_integer').add_integer
 8
 
 >>> add_integer(2, -1)
--1
+1
 
 >>> add_integer(2.0, 3.0)
 5
