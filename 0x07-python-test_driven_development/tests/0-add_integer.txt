@@ -1,6 +1,6 @@
 //how to use 0-add_integer.py
 
-This is a functioin that add an integer
+This is a function that add an integer
 
 add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2, 5)
