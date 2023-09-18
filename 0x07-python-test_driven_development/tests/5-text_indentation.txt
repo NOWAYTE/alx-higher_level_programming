@@ -2,15 +2,21 @@
 
 `text_indentation(text)` --> a function that prints a text with two line
 
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 >>> text_indentation("Hello. How is you ? its okay")
 Hello
+
 How is you
+
 its okay
 
 >>> text_indentation("This is a book: Ego. This is a another book: Champion.")
 This is a book
+
 Ego
+
 This is another book
+
 Champion
 
 >>> text_indentation("Hello there")
@@ -19,4 +25,4 @@ Hello there
 >>> text_indentation(123)
 Traceback (most recent call last):
   ...
-TypeError: Text must be a string
+TypeError: text must be a string
