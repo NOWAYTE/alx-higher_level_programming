@@ -6,7 +6,7 @@ def text_indentation(text):
     """Prints a text with 2 new lines after each of these characters
        . ? and :
        Arguments:
-            text --text to print 
+            text --text to print
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
@@ -16,4 +16,3 @@ def text_indentation(text):
 
         if c in [".", "?", ":"]:
             print("\n\n", end="")
-
