@@ -8,7 +8,6 @@ def print_square(size):
             @size: is the length of the square
     """
 
-
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
