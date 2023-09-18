@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     if not all(len(row) == len(matrix) for row in matrix):
-            raise TypeError("Each row of the matric must have the same size")
+        raise TypeError("Each row of the matric must have the same size")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
 
@@ -19,7 +19,4 @@ def matrix_divided(matrix, div):
         for i in row:
             lis.append(i)
         print"""
-
-
-    return [[round (i / div, 2) for i in row] for row in matrix]
-
+    return [[round(i / div, 2) for i in row] for row in matrix]
