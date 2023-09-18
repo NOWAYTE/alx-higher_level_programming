@@ -5,6 +5,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unitttest.TestCase):
     """unittest for max_integer"""
 
@@ -15,12 +16,12 @@ class TestMaxInteger(unitttest.TestCase):
 
     def test_u(self):
         list_unordered = [1, 2, 4, 3]
-        self.assertEqual(max_integer(list_unorded)
+        self.assertEqual(max_integer(list_unorded), 4)
 
     def test_e(self):
         list_empty = []
         self.assertEqual(max_integer(empty), None)
 
 
-    if __name__ = '__main__':
+    if __name__ == '__main__':
         unittest.main
