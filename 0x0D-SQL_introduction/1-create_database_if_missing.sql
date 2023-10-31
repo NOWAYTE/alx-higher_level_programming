@@ -1,3 +1,3 @@
 -- A script that creates a database 
 
-CREATE DATABASE IF NOT EXIST hbtn_0c_0;
+CREATE DATABASES IF NOT EXIST hbtn_0c_0;
