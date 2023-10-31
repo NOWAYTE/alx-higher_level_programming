@@ -1,2 +1,2 @@
 -- A script that deletes a database
-DROP DATABASE IF EXIT htbn_0n_0;
+DROP DATABASE IF EXIST htbn_0n_0;
