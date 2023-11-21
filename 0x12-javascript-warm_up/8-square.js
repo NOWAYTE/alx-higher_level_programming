@@ -1,16 +1,16 @@
 #!/usr/bin/node
 
 const args = process.argv.slice(2);
-const size = parseInt(args[0], 10);
+const sz = parseInt(args[0], 10);
 
-if (isNaN(size)) {
+if (isNaN(sz)) {
   console.log('Missing size');
-} else if (size <= 0) {
+} else if (sz <= 0) {
   console.log('Size must be greater than 0');
 } else {
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i < sz; i++) {
     let row = '';
-    for (let j = 0; j < size; j++) {
+    for (let j = 0; j < sz; j++) {
       row += 'X';
     }
     console.log(row);
