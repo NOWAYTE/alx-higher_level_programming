@@ -3,6 +3,4 @@
 
 url = $1
 
-response=$(curl -s -w "$url" | wc -c)
-
-echo "$response"
+curl -s -w "$url" | wc -c
