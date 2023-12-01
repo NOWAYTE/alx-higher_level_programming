@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # A bash script that takes URL, and sends a request to that URL
 
 url = $1
