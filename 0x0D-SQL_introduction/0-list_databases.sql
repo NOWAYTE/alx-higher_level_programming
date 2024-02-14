@@ -1,1 +1,2 @@
-SELECT * FROM MySQL server
+--a script that list all databases
+SHOW databases;
