@@ -1,0 +1,45 @@
+=======================
+How to use 1-my_list.py
+=======================
+
+
+This module defines a class ``MyList`` that inherits from ``list``
+
+::
+
+    >>>MyList = __import__('1-my_list').MyList
+    >>>my_list = MyList()
+    >>>my_list.append(1)
+    >>>my_list.append(4)
+    >>>my_list.append(2)
+
+    print(my_list)
+    [1, 4, 2,]
+
+::
+
+    >>>my_list.print_sorted()
+    [1, 2, 4]
+
+::
+
+    >>> my_list = MyList()
+    >>> my_list.append("B")
+    >>> my_list.append("P")
+    >>> my_list.append("S")
+    >>> my_list.append("H")
+    >>> my_list.append("B")
+    >>> print(my_list)
+    ['B', 'P', 'S', 'H', 'B']
+
+::
+
+    >>> my_list.print_sorted()
+    ['B', 'B', 'H', 'P', 'S']
+
+::
+
+    >>> my_list = MyList([1, "B", "H", 5])
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+    TypeError: unorderable types: str() < int()
