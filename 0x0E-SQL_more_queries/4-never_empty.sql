@@ -1,2 +1,2 @@
 -- a script that creates the table id_not_null
-CREATE TABLE IF NOT EXISTS ide_not_null(id INT, name VARCHAR(256)) VALUES(1);
+CREATE TABLE IF NOT EXISTS ide_not_null(id INT DEFAULT 1, name VARCHAR(256));
