@@ -17,7 +17,7 @@ class Rectangle(BaseGeometry):
             Height: height of the reactangle
 
         """
-        self.__width = width
-        self.__height = height
         self.integer_validator("height", height)
+        self.__heigth = height
         self.integer_validator("width", width)
+        self.width = width
