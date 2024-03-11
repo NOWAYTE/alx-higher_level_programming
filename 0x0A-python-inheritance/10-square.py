@@ -17,10 +17,12 @@ class Square(BaseGeometry):
         """
 
         self.__size = size
-        super.integer_validator("size", size)
-        super.__init__(size, size)
+        super().__init__()
+        super().integer_validator("size", size)
+        self.__width = size
+        self.__height = height
 
         def area(self):
             """Return the area of the rectangle"""
 
-            return self.__widht * self.__height
+            return self.__width * self.__height
