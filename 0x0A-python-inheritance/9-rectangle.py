@@ -2,7 +2,7 @@
 
 """Defines a Rectangle class """
 
-BaseGeometry = __import__('7-base_geometry').BaeGeometry
+BaseGeometry = __import__('8-rectangle.py').BaeGeometry
 
 
 class Rectangle(BaseGeometry):
