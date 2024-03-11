@@ -1,28 +1,18 @@
 #!/usr/bin/python3
 
-"""Defines a Square class"""
+"""Defines a Rectangle subclass Square."""
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
-
-class Square(BaseGeometry):
-    """Represents a Square class"""
+class Square(Rectangle):
+    """Represent a square."""
 
     def __init__(self, size):
-        """Instantiating sqaure
+        """Initialize a new square.
+
         Args:
-            size(int): represents the size of the sqaure
-
+            size (int): The size of the new square.
         """
-
+        self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
-        super().__init__()
-        super().integer_validator("size", size)
-        self.__width = size
-        self.__height = height
-
-        def area(self):
-            """Return the area of the rectangle"""
-
-            return self.__width * self.__height
