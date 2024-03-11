@@ -18,12 +18,12 @@ class Square:
         super().__init__(size, size)
         super().integer_validator("size", size)
 
-        def area(self):
-            """Returns the area of the square"""
+    def area(self):
+        """Returns the area of the square"""
 
-            return self.__size * self.__size
+        return self.__size * self.__size
 
-        def __str__(self):
-            """Returns the string representation of the square"""
+    def __str__(self):
+        """Returns the string representation of the square"""
 
-            return f"{[self.__class__.__name__}] {self.__width}/{self.__height}"
+        return f"{[self.__class__.__name__}] {self.__width}/{self.__height}"
