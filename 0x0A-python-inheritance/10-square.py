@@ -18,7 +18,7 @@ class Square(BaseGeometry):
 
         self.__size = size
 
-        super.integer_validator(size)
+        super.integer_validator("size", size)
 
         def area(self):
             """Return the area of the rectangle"""
