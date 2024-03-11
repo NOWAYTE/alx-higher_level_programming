@@ -1,18 +1,30 @@
 #!/usr/bin/python3
 
-"""Defines a Rectangle subclass Square."""
+"""Defines a Square class """
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(Rectangle):
-    """Represent a square."""
+class Square:
+    """Represents a Square class that inherits from BaseRectangle"""
 
     def __init__(self, size):
-        """Initialize a new square.
+        """Instance of a square
 
         Args:
-            size (int): The size of the new square.
+            size(int): Represents the size of the square
+
         """
-        self.integer_validator("size", size)
-        super().__init__(size, size)
+
         self.__size = size
+        super().__init__(size, size)
+        super().integer_validator("size", size)
+
+    def area(self):
+        """Returns the area of the square"""
+
+        return self.__size * self.__size
+
+    def __str__(self):
+        """Returns the string representation of the square"""
+
+        return f"{[self.__class__.__name__}] {self.__width}/{self.__height}"
