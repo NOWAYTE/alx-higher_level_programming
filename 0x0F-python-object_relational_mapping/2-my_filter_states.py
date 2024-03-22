@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-A script that takes in an argument and displays all values in the states tables
-where the name matches the argument
-"""
+"""A script that takes in an argument and displays allment """
 
 import sys
 import MySQLdb
