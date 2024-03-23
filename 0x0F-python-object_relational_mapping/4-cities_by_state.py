@@ -16,7 +16,9 @@ if __name__ == '__main__':
     query = """
             SELECT cities.id, cities.name, states.name
             FROM cities
-            JOIN states ON cities.id = states.id"""
+            JOIN states 
+            ON cities.id  = states.id
+            ORDER BY cities.id ASC"""
 
     cur.execute(query)
 
