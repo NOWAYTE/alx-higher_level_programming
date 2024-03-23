@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" A script that takes in an argument and displays all values in the states """
+"""
+    A script that takes in an argument and displays values alike in the states
+
+    """
 
 import sys
 import MySQLdb
