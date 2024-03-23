@@ -13,7 +13,12 @@ if __name__ == '__main__':
             db=sys.argv[3]
             )
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.id = states.id")
+    query = """
+            SELECT cities.id, cities.name, states.name
+            FROM cities
+            JOIN states ON cities.id = states.id"""
+
+    cur.execute(query)
 
     results = cur.fetchall()
 
