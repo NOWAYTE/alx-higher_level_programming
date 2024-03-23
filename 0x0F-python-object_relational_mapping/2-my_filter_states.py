@@ -13,7 +13,8 @@ if __name__ == '__main__':
             db=sys.argv[3],
             )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states".format(sys.argv[4]).strip("'"))
+    query = "SELECT * FROM states WHERE column_name LIKE %s"
+    cur.execute(query, ('%' + sys.argv[4] + '%',)
 
     result = cur.fetchall()
 
