@@ -13,11 +13,11 @@ if __name__ == '__main__':
             db=sys.argv[3],
             )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states")
-    results = cur.fetchall()
+    cur.execute("SELECT * FROM states".format(sys.argv[4]))
 
-    for i in results:
-        if i[1] == sys.argv[4]:
-            print(i)
+    result = cur.fetchall()
+
+    for i in result:
+        print(i)
 
     db.close()
