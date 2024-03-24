@@ -12,6 +12,10 @@ if __name__ == "__main__":
                 INNER JOIN states
                 ON cities.state_id = states.id
                 ORDER BY cities.id""")
-    print(", ".join([city[2]
+    results = c.fetchall()
+    for i in resulst:
+        print(i)
+
+    """print(", ".join([city[2]
                      for city in c.fetchall()
-                     if city[4] == sys.argv[4]]))
+                     if city[4] == sys.argv[4]]))"""
