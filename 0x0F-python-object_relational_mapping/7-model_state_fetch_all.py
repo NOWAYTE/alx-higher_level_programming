@@ -13,9 +13,8 @@ if __name__ == '__main__':
             "mysql+mysqldb://{}:{}@localhost/{}"
             .format(username, password, db), pool_pre_ping=True)
 
-    Session = sessionmaker(bind=engine)
-
-    session = Session()
+    session_make = sessionmaker(bind=engine)
+    session = session_maker()
 
     states = session.query(State).order_by(State.id).all()
 
