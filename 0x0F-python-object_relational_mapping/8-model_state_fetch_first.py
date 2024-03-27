@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Defines a script that prints the first State object from the dataase"""
- from sqlachemy.orm import sessionmaker
+ from sqlalchemy.orm import sessionmaker
  from sqlalchemy import create_engine
  from model_state import Base, State
  import sys
