@@ -6,6 +6,6 @@ if [ $# -eq 0 ]; then
         exit
 fi
 
-curl -sI $1 | grep -i content-length | awk '{print $2}'
+curl -sI "$1" | grep -i content-length | awk '{print $2}'
 
 exit 0
