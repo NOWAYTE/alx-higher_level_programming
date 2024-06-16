@@ -1,3 +1,3 @@
 #!/bin/bash
 #script displays http methods accepted by server 
-curl  -X OPTIONS -i "$1"
+curl -sI "$1" | grep "Allow" 
