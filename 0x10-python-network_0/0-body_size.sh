@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #script that takes in an URL and displys the size of the body
-
 if [ $# -eq 0 ]; then
         echo "Usage: $0 URL"
         exit
