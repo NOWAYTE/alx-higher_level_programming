@@ -7,7 +7,7 @@ function that finds the peak in an unsorted array
 
 def find_peak(list_of_integers):
     """
-    returns peak in a unsorted array 
+    returns peak in a unsorted array
 
     """
     if len(list_of_integers) == 0:
