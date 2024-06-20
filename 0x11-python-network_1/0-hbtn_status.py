@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """
-A python script that fetches https:// alx-intranet.hbtn.io/status
+A python script that fetches from a URL
 """
 
 
-import urllib.request
+from urllib import request
 
 if __name__ == "__main__":
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+
+    with request.urlopen('https://alx-intranet.hbtn.io/status') as response:
         read = response.read
         print("Body response: ")
         print("\t-  type: {}".format(type(read)))
