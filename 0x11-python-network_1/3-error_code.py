@@ -2,8 +2,7 @@
 """Send a request and dislays the body response"""
 import sys
 import urllib
-from urllib.request import Request, urlopen
-from urllib.error import URLError, HTTPError
+from urllib import request, error
 
 if __name__ == "__main__":
     if (sys.argv[1]):
@@ -11,6 +10,6 @@ if __name__ == "__main__":
 
     try:
         with urllib.request.urlopen(request) as response:
-            print("{}".format(response.read().decode("utf-8")))
+            print("{}".format(response.read().decode("ascii")))
     except urllib.error.HTTPError as e:
-        print("{}".format(e.code))
+        print("Error code: {}".format(e.code))
