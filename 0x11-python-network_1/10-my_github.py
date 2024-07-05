@@ -11,10 +11,8 @@ if __name__ == '__main__':
     passwd = sys.argv[2]
     url = " https://api.github.com/user"
 
-    value = {"user":  user, "passwd": passwd}
-
     try:
-        response = requests.get(url, data=value)
+        response = requests.get(url, auth=(user, passwd))
 
         json = response.json()
 
