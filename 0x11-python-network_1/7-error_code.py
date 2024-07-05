@@ -11,7 +11,8 @@ if __name__ == '__main__':
     try:
         response = requests.get(sys.argv[1])
 
-        print("{}".format(response.text))
+        if reponse.status_code >= 400:
+            print("Error code: {}".format(reponse.status_code))
 
-    except HTTPError as e:
-        print("Error code: {}".format(e)
+        else:
+            print("{}".format(response.text))
