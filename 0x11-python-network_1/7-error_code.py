@@ -4,15 +4,12 @@
 
 import sys
 import requests
-from requests.exceptions import HTTPError
-
 
 if __name__ == '__main__':
-    try:
-        response = requests.get(sys.argv[1])
+    response = requests.get(sys.argv[1])
 
-        if reponse.status_code >= 400:
-            print("Error code: {}".format(reponse.status_code))
+    if reponse.status_code >= 400:
+        print("Error code: {}".format(reponse.status_code))
 
-        else:
-            print("{}".format(response.text))
+    else:
+        print("{}".format(response.text))
