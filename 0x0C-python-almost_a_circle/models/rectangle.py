@@ -81,6 +81,8 @@ class Rectangle(Base):
         rectangle = ""
 
         for i in range(self.y):
-            rectangle += "#" * self.x + "\n"
+            rectangle = " " * self.x
+
+            rectangle += "#" * self.width + "\n"
 
         print(rectangle)
