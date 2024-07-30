@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines a Rectangle class"""
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -79,7 +79,8 @@ class Rectangle(Base):
         """Prits rectangle instance with #"""
 
         rectangle = ""
-        for i in range(self.y):
-            rectangle += "#" * self.x + "\n"
+
+        for i in range(self.height):
+            rectangle += "#" * self.width + "\n"
 
         print(rectangle)
