@@ -77,10 +77,21 @@ class Rectangle(Base):
     def display(self):
         """Prints the rectangle instance with #"""
         rectangle = ""
+        
+        # Add the top padding (y offset)
         for i in range(self.y):
             rectangle += "\n"
+        
+        # Create each row of the rectangle
         for i in range(self.height):
+            # Add the left padding (x offset)
             rectangle += " " * self.x
+            # Add the rectangle row
             rectangle += "#" * self.width + "\n"
 
         print(rectangle)
+
+# Example usage:
+rect = Rectangle(2, 3, 2, 2)
+rect.display()
+
