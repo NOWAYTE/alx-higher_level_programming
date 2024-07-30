@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """Defines a Rectangle class"""
 
-
 from models.base import Base
-
 
 class Rectangle(Base):
     """Inherits from Base class"""
@@ -25,11 +23,9 @@ class Rectangle(Base):
     def width(self, value):
         """setter"""
         if not isinstance(value, int):
-            raise TypeError("Width must be an integer")
-
+            raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-
         self.__width = value
 
     @property
@@ -41,10 +37,9 @@ class Rectangle(Base):
     def height(self, value):
         """setter"""
         if not isinstance(value, int):
-            raise TypeError("Height must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("Height must be > 0")
-
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -56,12 +51,10 @@ class Rectangle(Base):
     def x(self, value):
         """setter"""
         if not isinstance(value, int):
-            raise TypeError("X must be an integer")
-
+            raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("X must be >=  0")
-
-        self.__x
+            raise ValueError("x must be >= 0")
+        self.__x = value
 
     @property
     def y(self):
@@ -71,10 +64,9 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """setter"""
-        if not isinstance(self, value):
-            raise TypeError("Y must be an integer")
-
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("Y must be >= 0")
-
+            raise ValueError("y must be >= 0")
         self.__y = value
+
