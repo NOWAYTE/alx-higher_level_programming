@@ -3,7 +3,6 @@
 
 from models.base import Base
 
-
 class Rectangle(Base):
     """Inherits from Base class"""
 
@@ -72,14 +71,16 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """returns the area of rectanngle"""
+        """returns the area of the rectangle"""
         return self.width * self.height
 
     def display(self):
-        """Prits rectangle instance with #"""
-
+        """Prints the rectangle instance with #"""
         rectangle = ""
         for i in range(self.y):
-            rectangle += "#" * self.x + "\n"
+            rectangle += "\n"
+        for i in range(self.height):
+            rectangle += " " * self.x
+            rectangle += "#" * self.width + "\n"
 
         print(rectangle)
