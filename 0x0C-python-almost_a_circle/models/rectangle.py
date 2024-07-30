@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """Inherits from Base class"""
 
@@ -29,7 +30,7 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
 
-        self.__width = value 
+        self.__width = value
 
     @property
     def height(self):
@@ -56,13 +57,13 @@ class Rectangle(Base):
         """setter"""
         if not isinstance(value, int):
             raise TypeError("X must be an integer")
-        
+
         if value < 0:
             raise ValueError("X must be >=  0")
 
         self.__x
 
-    @property 
+    @property
     def y(self):
         """getter"""
         return self.__y
@@ -77,4 +78,3 @@ class Rectangle(Base):
             raise ValueError("Y must be >= 0")
 
         self.__y = value
-
