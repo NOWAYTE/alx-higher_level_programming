@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 
-url = "https://swapi-api.alx-tools.com/api/films/"
+const burl = 'https://swapi-api.alx-tools.com/api/films/';
 
-request.get(url +"/" + process.argv[2], (error, response, body) => {
-	if (error) throw error;
+request.get(burl + process.argv[2], (error, response, body) => {
+  if (error) throw error;
 
-	console.log(JSON.parse(body).title)
+  console.log(JSON.parse(body).title);
 });
